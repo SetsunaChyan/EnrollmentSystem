@@ -1,0 +1,16 @@
+use enroll_system_DB;
+create table `student`(
+    `Identification_number` varchar(256) not null,
+    `Examination_number` varchar(256) not null,
+    `Name` varchar(256) not null,
+    `Age` int not null,
+    `Sex` varchar(256) not null,
+    `Phone_number` varchar(256) not null,
+    `Native_place` varchar(256) not null,
+    `Account_number` varchar(256) not null,
+    `Password` varchar(256) not null,
+    primary key ( `Identification_number`,`Examination_number` )
+)default charset=utf8;
+
+insert into student (Identification_number, Examination_number, Name, Age, Sex, Phone_number, Native_place, Account_number, Password)
+            values ('114514','1919810','田所浩二',24,'男','337845818','下北泽','TiansuoLi','114514');
