@@ -128,8 +128,7 @@ public class Student
     {
         this.subject=subject;
     }
-
-    public Student() { }
+    
 
     public StudentKey getId()
     {
