@@ -40,6 +40,11 @@ const routes = [
         name: 'Set_Volunteer',
         component: () => import('../views/Student/Set_Volunteer.vue'),
     },
+    {
+        path: '/Set_Volunteer2',
+        name: 'Set_Volunteer2',
+        component: () => import('../views/Student/Set_Volunteer2.vue'),
+    },
 
 
 
@@ -114,6 +119,11 @@ const routes = [
         path: '/Admin',
         name: 'Admin',
         component: () => import('../views/Admin/Admin.vue'),
+    },
+    {
+        path: '/Begin',
+        name: 'Begin',
+        component: () => import('../views/Admin/Begin.vue'),
     },
 
     {

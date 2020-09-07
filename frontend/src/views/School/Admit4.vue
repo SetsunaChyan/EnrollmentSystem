@@ -14,7 +14,7 @@
                         router>
                     <el-menu-item index="/School_main"><i class="el-icon-s-custom"></i>院校主页</el-menu-item>
                     <template slot="title"> <i class="el-icon-menu"></i>信息管理</template>
-                    <el-menu-item index="/SchoolInfo"><i class="el-icon-edit-outline"></i>学校上报</el-menu-item>
+<!--                    <el-menu-item index="/SchoolInfo"><i class="el-icon-edit-outline"></i>学校上报</el-menu-item>-->
                     <el-menu-item index="/Enroll_plan"><i class="el-icon-tickets"></i>招生计划</el-menu-item>
                     <el-submenu index="2">
                         <template slot="title"> <i class="el-icon-menu"></i>录取管理</template>
@@ -23,8 +23,8 @@
                         <el-menu-item index="/Admit3">特招录取</el-menu-item>
                         <el-menu-item index="/Admit4">补录录取</el-menu-item>
                     </el-submenu>
-                    <el-menu-item index="/checkStu"><i class="el-icon-search"></i>查看录取</el-menu-item>
-                    <el-menu-item index="/People_mange"><i class="el-icon-info"></i>人员管理</el-menu-item>
+<!--                    <el-menu-item index="/checkStu"><i class="el-icon-search"></i>查看录取</el-menu-item>-->
+<!--                    <el-menu-item index="/People_mange"><i class="el-icon-info"></i>人员管理</el-menu-item>-->
                 </el-menu>
             </el-aside>
 
@@ -92,30 +92,34 @@
                             prop="sex">
                     </el-table-column>
                     <el-table-column
-                            fixed="right"
-                            label="操作"
-                    >
-                        <template slot-scope="props">
-                            <!--                            <el-button @click="props.row.show =true"-->
-                            <!--                                       type="text"-->
-                            <!--                                       size="small"-->
-                            <!--                            >编辑</el-button>-->
-                            <!--                            <el-button @click="props.row.show =false"-->
-                            <!--                                       type="text"-->
-                            <!--                                       size="small"-->
-                            <!--                            >保存</el-button>-->
-                            <el-button
-                                    @click.native.prevent="deleteRow(props.$index, tableData5)"
-                                    type="text"
-                                    size="small">
-                                移除</el-button>
-                            <el-button
-                                    @click.native.prevent="agreeRow(props.$index, tableData5)"
-                                    type="text"
-                                    size="small">
-                                通过</el-button>
-                        </template>
+                            label="专业"
+                            prop=major>
                     </el-table-column>
+<!--                    <el-table-column-->
+<!--                            fixed="right"-->
+<!--                            label="操作"-->
+<!--                    >-->
+<!--                        <template slot-scope="props">-->
+<!--                            &lt;!&ndash;                            <el-button @click="props.row.show =true"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                       type="text"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                       size="small"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            >编辑</el-button>&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            <el-button @click="props.row.show =false"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                       type="text"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                                       size="small"&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            >保存</el-button>&ndash;&gt;-->
+<!--                            <el-button-->
+<!--                                    @click.native.prevent="deleteRow(props.$index, tableData5)"-->
+<!--                                    type="text"-->
+<!--                                    size="small">-->
+<!--                                移除</el-button>-->
+<!--                            <el-button-->
+<!--                                    @click.native.prevent="agreeRow(props.$index, tableData5)"-->
+<!--                                    type="text"-->
+<!--                                    size="small">-->
+<!--                                通过</el-button>-->
+<!--                        </template>-->
+<!--                    </el-table-column>-->
 
                 </el-table>
 
@@ -141,14 +145,14 @@
 
 <script>
     export default {
-        methods: {
-            deleteRow(index, rows) {
-                rows.splice(index, 1);
-            },
-            agreeRow(index, rows) {
-                rows.splice(index, 1);
-            }
-        },
+        // methods: {
+        //     deleteRow(index, rows) {
+        //         rows.splice(index, 1);
+        //     },
+        //     agreeRow(index, rows) {
+        //         rows.splice(index, 1);
+        //     }
+        // },
         data() {
             return {
                 tableData5: [{

@@ -15,8 +15,9 @@
                     <el-menu-item index="/Admin_main"><i class="el-icon-s-custom"></i>管理员主页</el-menu-item>
                     <template slot="title"> <i class="el-icon-menu"></i>信息管理</template>
                     <el-menu-item index="/ModifyStu">考生信息</el-menu-item>
-                    <el-menu-item index="/ApproveSch">学校审批</el-menu-item>
+<!--                    <el-menu-item index="/ApproveSch">学校审批</el-menu-item>-->
                     <el-menu-item index="/ModifySch">学校增删</el-menu-item>
+                    <el-menu-item index="/Begin">开始录取</el-menu-item>
                     <el-menu-item index="/Admin">人员管理</el-menu-item>
                 </el-menu>
             </el-aside>

@@ -19,7 +19,12 @@
                     <el-menu-item index="/StudentCheckEnroll">查看录取结果</el-menu-item>
                     <el-menu-item index="/StudentChangePass">修改密码</el-menu-item>
                 </el-submenu>
-                <el-menu-item index="/Set_Volunteer"><i class="el-icon-document"></i>填报志愿</el-menu-item>
+                <el-submenu index="3">
+                    <template slot="title"> <i class="el-icon-document"></i>填报志愿</template>
+                    <el-menu-item index="/Set_Volunteer2">填报提前批</el-menu-item>
+                    <el-menu-item index="/Set_Volunteer">填报普通批</el-menu-item>
+                </el-submenu>
+
             </el-menu>
         </el-aside>
         </el-container>
