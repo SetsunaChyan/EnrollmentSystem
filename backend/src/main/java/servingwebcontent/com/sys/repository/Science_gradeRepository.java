@@ -1,8 +1,8 @@
 package servingwebcontent.com.sys.repository;
 
 
-import entity.Science_grade;
-import entity.Science_gradeKey;
+import servingwebcontent.com.sys.entity.Science_grade;
+import servingwebcontent.com.sys.entity.Science_gradeKey;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

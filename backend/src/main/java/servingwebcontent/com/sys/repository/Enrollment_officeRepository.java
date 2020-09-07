@@ -1,7 +1,7 @@
 package servingwebcontent.com.sys.repository;
 
-import entity.Enrollment_office;
-import entity.Enrollment_officeKey;
+import servingwebcontent.com.sys.entity.Enrollment_office;
+import servingwebcontent.com.sys.entity.Enrollment_officeKey;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

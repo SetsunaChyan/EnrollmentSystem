@@ -1,6 +1,6 @@
 package servingwebcontent.com.sys.repository;
 
-import entity.*;
+import servingwebcontent.com.sys.entity.*;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

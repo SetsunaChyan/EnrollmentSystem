@@ -1,7 +1,7 @@
 package servingwebcontent.com.sys.repository;
 
-import entity.Unapproved_enrollment;
-import entity.Unapproved_enrollmentKey;
+import servingwebcontent.com.sys.entity.Unapproved_enrollment;
+import servingwebcontent.com.sys.entity.Unapproved_enrollmentKey;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

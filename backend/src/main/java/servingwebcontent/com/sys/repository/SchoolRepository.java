@@ -1,7 +1,7 @@
 package servingwebcontent.com.sys.repository;
 
-import entity.School;
-import entity.SchoolKey;
+import servingwebcontent.com.sys.entity.School;
+import servingwebcontent.com.sys.entity.SchoolKey;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

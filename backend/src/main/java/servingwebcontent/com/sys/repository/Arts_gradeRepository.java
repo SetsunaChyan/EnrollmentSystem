@@ -1,7 +1,7 @@
 package servingwebcontent.com.sys.repository;
 
-import entity.Arts_grade;
-import entity.Arts_gradeKey;
+import servingwebcontent.com.sys.entity.Arts_grade;
+import servingwebcontent.com.sys.entity.Arts_gradeKey;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

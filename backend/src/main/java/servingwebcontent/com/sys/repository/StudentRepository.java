@@ -1,7 +1,7 @@
 package servingwebcontent.com.sys.repository;
 
-import entity.Student;
-import entity.StudentKey;
+import servingwebcontent.com.sys.entity.Student;
+import servingwebcontent.com.sys.entity.StudentKey;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
