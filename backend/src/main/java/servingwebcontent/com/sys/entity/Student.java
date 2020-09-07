@@ -10,8 +10,8 @@ public class Student
     @EmbeddedId
     private StudentKey id;
     @Basic
-    @Column(name="examinationNumber")
-    private String examinationNumber;
+    @Column(name="Examination_number")
+    private String Examination_number;
     @Basic
     @Column(name="Name")
     private String name;
@@ -39,12 +39,12 @@ public class Student
 
     public String getExaminationNumber()
     {
-        return examinationNumber;
+        return Examination_number;
     }
 
-    public void setExaminationNumber(String examinationNumber)
+    public void setExamination_number(String Examination_number)
     {
-        this.examinationNumber=examinationNumber;
+        this.Examination_number=Examination_number;
     }
     public String getName()
     {
@@ -143,6 +143,6 @@ public class Student
     @Override
     public int hashCode()
     {
-        return Objects.hash(examinationNumber,id,name,age,sex,phoneNumber,nativePlace,accountNumber,password,subject);
+        return Objects.hash(Examination_number,id,name,age,sex,phoneNumber,nativePlace,accountNumber,password,subject);
     }
 }
