@@ -10,6 +10,7 @@ public class Student
     @EmbeddedId
     private StudentKey id;
     @Basic
+    private String examinationNumber;
     @Column(name="Name")
     private String name;
     @Basic

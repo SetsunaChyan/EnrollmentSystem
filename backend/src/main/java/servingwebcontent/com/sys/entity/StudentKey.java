@@ -7,7 +7,6 @@ import java.io.Serializable;
 public class StudentKey implements Serializable
 {
     private String identificationNumber;
-    private String examinationNumber;
 
     public String getIdentificationNumber()
     {
@@ -19,13 +18,4 @@ public class StudentKey implements Serializable
         this.identificationNumber=identificationNumber;
     }
 
-    public String getExaminationNumber()
-    {
-        return examinationNumber;
-    }
-
-    public void setExaminationNumber(String examinationNumber)
-    {
-        this.examinationNumber=examinationNumber;
-    }
 }
