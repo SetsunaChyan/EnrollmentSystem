@@ -1,3 +1,5 @@
+
+
 <template>
     <el-container>
         <el-header><h1>考生录取系统</h1></el-header>
@@ -58,21 +60,30 @@
         },
         methods: {
             login: function () {
-                axios.get('api/user/login', {
-                    params: this.form
-                }).then(function (ret) {
-                    console.log(ret)
-                    if (ret.data.status === 0) {
-                        window.location.href = "IndexExample";
-                    } else {
-                        alert(ret.data.msg);
-                    }
-                }, function () {
-                    console.log('传输失败');
-                });
-            }
+                if(this.form.character==="admin") {
+                    this.$router.push("/Admin_main");
+                }else if(this.form.character==="student"){
+                    this.$router.push("/StudentMenu");
+                }else if(this.form.character==="school"){
+                    this.$router.push("/School_main");
+                }
+                        // axios.get('api/user/login', {
+                        //     params: this.form
+                        // }).then(function (ret) {
+                        //     console.log(ret)
+                        //     if (ret.data.status === 0) {
+                        //         //window.location.href = "api/user/about";
+                        //         this.$router.push("/about")
+                        //     } else {
+                        //         alert(ret.data.msg);
+                        //     }
+                        // }, function () {
+                        //     console.log('传输失败');
+                        // });
+                }
+                }
         }
-    }
+
 </script>
 
 <style>
