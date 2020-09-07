@@ -144,6 +144,6 @@ public class Student
     @Override
     public int hashCode()
     {
-        return Objects.hash(examinationNumber,id,name,age,sex,phoneNumber,nativePlace,accountNumber,password);
+        return Objects.hash(examinationNumber,id,name,age,sex,phoneNumber,nativePlace,accountNumber,password,subject);
     }
 }
