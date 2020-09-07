@@ -4,7 +4,7 @@ import javax.persistence.Embeddable;
 import java.io.Serializable;
 
 @Embeddable
-public class StudentKey implements Serializable
+public class Student_not_admittedKey implements Serializable
 {
     private String identificationNumber;
 
@@ -12,7 +12,6 @@ public class StudentKey implements Serializable
     {
         return identificationNumber;
     }
-
     public void setIdentificationNumber(String identificationNumber)
     {
         this.identificationNumber=identificationNumber;

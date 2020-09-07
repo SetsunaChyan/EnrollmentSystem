@@ -4,9 +4,10 @@ import javax.persistence.Embeddable;
 import java.io.Serializable;
 
 @Embeddable
-public class StudentKey implements Serializable
+public class Science_gradeKey implements Serializable
 {
     private String identificationNumber;
+
 
     public String getIdentificationNumber()
     {

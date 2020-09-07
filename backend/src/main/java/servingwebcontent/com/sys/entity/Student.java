@@ -4,11 +4,14 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name="student", schema="enroll_system_DB")
+@Table(name="student",schema="enroll_system_DB")
 public class Student
 {
     @EmbeddedId
     private StudentKey id;
+    @Basic
+    @Column(name="examinationNumber")
+    private String examinationNumber;
     @Basic
     @Column(name="Name")
     private String name;
@@ -30,7 +33,19 @@ public class Student
     @Basic
     @Column(name="Age")
     private int age;
+    @Basic
+    @Column(name="subject")
+    private String subject;
 
+    public String getExaminationNumber()
+    {
+        return examinationNumber;
+    }
+
+    public void setExaminationNumber(String examinationNumber)
+    {
+        this.examinationNumber=examinationNumber;
+    }
     public String getName()
     {
         return name;
@@ -104,6 +119,16 @@ public class Student
     public Student()
     {
     }
+    public String getSubject()
+    {
+        return subject;
+    }
+
+    public void setSubject(String subject)
+    {
+        this.subject=subject;
+    }
+    
 
     public StudentKey getId()
     {
@@ -118,6 +143,6 @@ public class Student
     @Override
     public int hashCode()
     {
-        return Objects.hash(id,name,age,sex,phoneNumber,nativePlace,accountNumber,password);
+        return Objects.hash(examinationNumber,id,name,age,sex,phoneNumber,nativePlace,accountNumber,password,subject);
     }
 }

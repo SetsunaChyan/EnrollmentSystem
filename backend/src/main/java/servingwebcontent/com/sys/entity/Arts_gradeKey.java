@@ -4,7 +4,7 @@ import javax.persistence.Embeddable;
 import java.io.Serializable;
 
 @Embeddable
-public class StudentKey implements Serializable
+public class Arts_gradeKey implements Serializable
 {
     private String identificationNumber;
 
