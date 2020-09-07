@@ -15,7 +15,7 @@
                     <el-menu-item index="/Admin_main"><i class="el-icon-s-custom"></i>管理员主页</el-menu-item>
                     <template slot="title"> <i class="el-icon-menu"></i>信息管理</template>
                     <el-menu-item index="/ModifyStu">考生信息</el-menu-item>
-<!--                    <el-menu-item index="/ApproveSch">学校审批</el-menu-item>-->
+                    <el-menu-item index="/ApproveSch">计划审批</el-menu-item>
                     <el-menu-item index="/ModifySch">学校增删</el-menu-item>
                     <el-menu-item index="/Begin">开始录取</el-menu-item>
                     <el-menu-item index="/Admin">人员管理</el-menu-item>
@@ -37,8 +37,12 @@
                             label="校名">
                     </el-table-column>
                     <el-table-column
-                            prop="address"
-                            label="地址">
+                            prop="major"
+                            label="专业">
+                    </el-table-column>
+                    <el-table-column
+                            prop="number"
+                            label="人数">
                     </el-table-column>
                     <el-table-column
                             fixed="right"
@@ -79,11 +83,13 @@
                 tableData4: [{
                     id: 1,
                     name: '上海理工大学',
-                    address: '军工路516'
+                    major: '计算机科学与技术',
+                    number: '516'
                 }, {
                     id: 2,
                     name: '复旦大学',
-                    address: '邯郸路'
+                    major: '计算机科学与技术',
+                    number: '516'
                 }]
             }
         }
