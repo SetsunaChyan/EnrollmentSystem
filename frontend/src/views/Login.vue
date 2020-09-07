@@ -1,3 +1,5 @@
+
+
 <template>
     <el-container>
         <el-header><h1>考生录取系统</h1></el-header>
@@ -58,19 +60,22 @@
         },
         methods: {
             login: function () {
-                axios.get('api/user/login', {
-                    params: this.form
-                }).then(function (ret) {
-                    console.log(ret)
-                    if (ret.data.status === 0) {
-                        window.location.href = "IndexExample";
-                    } else {
-                        alert(ret.data.msg);
-                    }
-                }, function () {
-                    console.log('传输失败');
-                });
+                this.$router.push("/StudentMenu")
+                // axios.get('api/user/login', {
+                //     params: this.form
+                // }).then(function (ret) {
+                //     console.log(ret)
+                //     if (ret.data.status === 0) {
+                //         //window.location.href = "api/user/about";
+                //         this.$router.push("/about")
+                //     } else {
+                //         alert(ret.data.msg);
+                //     }
+                // }, function () {
+                //     console.log('传输失败');
+                // });
             }
+
         }
     }
 </script>
