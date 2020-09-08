@@ -31,24 +31,24 @@
             <el-main style="width: 75%" >
 
                 <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
-                    <el-form-item label="ID" prop="id" align="left">
-                        <el-input v-model="ruleForm.id"></el-input>
+                    <el-form-item label="ID" prop="School_ID" align="left">
+                        <el-input v-model="ruleForm.School_ID"></el-input>
                     </el-form-item>
-                    <el-form-item label="学校名称" prop="name" align="left">
-                        <el-input v-model="ruleForm.name"></el-input>
+                    <el-form-item label="学校名称" prop="School_name" align="left">
+                        <el-input v-model="ruleForm.School_name"></el-input>
                     </el-form-item>
-                    <el-form-item label="省份" prop="province" align="left">
-                        <el-input v-model="ruleForm.provice"></el-input>
+                    <el-form-item label="省份" prop="Province" align="left">
+                        <el-input v-model="ruleForm.Province"></el-input>
                     </el-form-item>
-                    <el-form-item label="专业" prop="major" align="left">
-                        <el-input v-model="ruleForm.major"></el-input>
+                    <el-form-item label="专业" prop="Major" align="left">
+                        <el-input v-model="ruleForm.Major"></el-input>
                     </el-form-item>
-                    <el-form-item label="人数" prop="number" align="left">
-                        <el-input v-model="ruleForm.number"></el-input>
+                    <el-form-item label="人数" prop="Enrollment_number" align="left">
+                        <el-input v-model="ruleForm.Enrollment_number"></el-input>
                     </el-form-item>
 
-                    <el-form-item label="录取批次" prop="batch" align="left">
-                        <el-radio-group v-model="ruleForm.batch">
+                    <el-form-item label="录取批次" prop="Batch" align="left">
+                        <el-radio-group v-model="ruleForm.Batch">
                             <el-radio label="统招"></el-radio>
                             <el-radio label="特招"></el-radio>
                         </el-radio-group>
@@ -71,30 +71,30 @@
         data() {
             return {
                 ruleForm: {
-                    id: '',
-                    name: '',
-                    province:'',
-                    major:'',
-                    number:'',
-                    batch: '',
+                    School_ID: '',
+                    School_name: '',
+                    Province:'',
+                    Major:'',
+                    Enrollment_number:'',
+                    Batch: '',
                 },
                 rules: {
-                    name: [
+                    School_name: [
                         { required: true, message: '请输入校名', trigger: 'blur' },
                     ],
-                    id: [
+                    School_ID: [
                         { required: true, message: '请输入id', trigger: 'blur' },
                     ],
-                    province: [
+                    Province: [
                         { required: true, message: '请输入省份', trigger: 'blur' },
                     ],
-                    major: [
+                    Major: [
                         { required: true, message: '请输入专业', trigger: 'blur' },
                     ],
-                    number: [
+                    Enrollment_number: [
                         { required: true, message: '请输入人数', trigger: 'blur' },
                     ],
-                    batch: [
+                    Batch: [
                         { required: true, message: '请选择录取批次', trigger: 'change' }
                     ]
                 }

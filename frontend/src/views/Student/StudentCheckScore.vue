@@ -34,14 +34,54 @@
                     stripe
                     style="width: 100%">
                 <el-table-column
-                        prop="name"
-                        label="内容"
-                        width="180">
+                        prop="ExaminationNumber"
+                        label="准考证号"
+                        >
                 </el-table-column>
                 <el-table-column
-                        prop="score"
-                        label="分数"
-                        width="180">
+                        prop="name"
+                        label="姓名"
+                        >
+                </el-table-column>
+                <el-table-column
+                        prop="Chinese_grade"
+                        label="语文"
+                        >
+                </el-table-column>
+                <el-table-column
+                        prop="Math_grade"
+                        label="数学"
+                        >
+                </el-table-column>
+                <el-table-column
+                        prop="English_grade"
+                        label="英语"
+                        >
+                </el-table-column>
+                <el-table-column
+                        prop="Physics_grade"
+                        label="物理"
+                        >
+                </el-table-column>
+                <el-table-column
+                        prop="Chemistry_grade"
+                        label="化学"
+                        >
+                </el-table-column>
+                <el-table-column
+                        prop="Biology_grade"
+                        label="生物"
+                        >
+                </el-table-column>
+                <el-table-column
+                        prop="Total_points"
+                        label="总分"
+                        >
+                </el-table-column>
+                <el-table-column
+                        prop="Ranking"
+                        label="排名"
+                        >
                 </el-table-column>
             </el-table>
         </el-main>
@@ -56,21 +96,18 @@
         name: "StudentCheckScore",
         data() {
             return {
+                dialog_visible: false,
                 tableData: [{
-                    name: '语文',
-                    score: '120',
-                }, {
-                    name: '数学',
-                    score: '120',
-                }, {
-                    name: '英语',
-                    score: '120',
-                }, {
-                    name: '总分',
-                    score: '360',
-                }, {
-                    name: '排名',
-                    score: '999',
+                    ExaminationNumber: '31343',
+                    name: '张三',
+                    Chinese_grade: '120',
+                    Math_grade: '120',
+                    English_grade: '120',
+                    Chemistry_grade: '80',
+                    Physics_grade: '80',
+                    Biology_grade: '80',
+                    Total_points: '600',
+                    Ranking: '111',
                 }]
             }
         }

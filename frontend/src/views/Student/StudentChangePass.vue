@@ -31,11 +31,11 @@
 
     <el-main style="width: 50%" >
         <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm" >
-            <el-form-item label="旧密码" prop="oldpass">
-                <el-input v-model.number="ruleForm.oldpass"></el-input>
+            <el-form-item label="旧密码" prop="Password">
+                <el-input v-model.number="ruleForm.Password"></el-input>
             </el-form-item>
-            <el-form-item label="密码" prop="pass">
-                <el-input type="password" v-model="ruleForm.pass" autocomplete="off" ></el-input>
+            <el-form-item label="密码" prop="newPass">
+                <el-input type="password" v-model="ruleForm.newPass" autocomplete="off" ></el-input>
             </el-form-item>
             <el-form-item label="确认密码" prop="checkPass">
                 <el-input type="password" v-model="ruleForm.checkPass" autocomplete="off" ></el-input>
@@ -79,12 +79,12 @@
 
             return {
                 ruleForm: {
-                    pass: '',
+                    newPass: '',
                     checkPass: '',
-                    oldpass: ''
+                    Password: ''
                 },
                 rules: {
-                    pass: [
+                    newPass: [
                         { validator: validatePass, trigger: 'blur' }
                     ],
                     checkPass: [
