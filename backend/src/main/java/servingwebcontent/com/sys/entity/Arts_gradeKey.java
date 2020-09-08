@@ -8,6 +8,14 @@ public class Arts_gradeKey implements Serializable
 {
     private String identificationNumber;
 
+    public Arts_gradeKey()
+    {}
+
+    public Arts_gradeKey(String id_num)
+    {
+        identificationNumber=id_num;
+    }
+
     public String getIdentificationNumber()
     {
         return identificationNumber;

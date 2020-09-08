@@ -8,6 +8,13 @@ public class Science_gradeKey implements Serializable
 {
     private String identificationNumber;
 
+    public Science_gradeKey()
+    {}
+
+    public Science_gradeKey(String id_num)
+    {
+        identificationNumber=id_num;
+    }
 
     public String getIdentificationNumber()
     {

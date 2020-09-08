@@ -11,8 +11,8 @@ import java.util.List;
 public interface StudentRepository extends JpaRepository<Student, StudentKey>
 {
     Student findByAccountNumberAndPassword(String accountNumber,String password);
-    String  deleteByIdIs(StudentKey studentKey);
-    String  save(Student student);  //通过重新保存对象实现修改，主要用于修改密码
-    Student findOne(StudentKey studentKey); //查找某一个学生
+    //Object  deleteByIdIs(StudentKey studentKey);
+    //Object  save(Student student);  //通过重新保存对象实现修改，主要用于修改密码
+    //Student findOne(StudentKey studentKey); //查找某一个学生
     List<Student> findAll();     //查找所有学生
 }

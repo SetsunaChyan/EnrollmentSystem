@@ -10,7 +10,7 @@ public class Arts_grade
     @EmbeddedId
     private Arts_gradeKey id;
     @Basic
-    @Column(name="=ExaminationNumber")
+    @Column(name="Examination_number")
     private String ExaminationNumber;
     @Basic
     @Column(name="Name")

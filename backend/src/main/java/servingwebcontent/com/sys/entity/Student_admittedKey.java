@@ -80,7 +80,7 @@ public class Student_admittedKey implements Serializable
     {
         return Serial_number;
     }
-    public void setMajor(int Serial_number)
+    public void setSerial_number(int Serial_number)
     {
         this.Serial_number=Serial_number;
     }
