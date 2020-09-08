@@ -37,12 +37,20 @@
                             label="校名">
                     </el-table-column>
                     <el-table-column
+                            prop="province"
+                            label="省份">
+                    </el-table-column>
+                    <el-table-column
                             prop="major"
                             label="专业">
                     </el-table-column>
                     <el-table-column
                             prop="number"
                             label="人数">
+                    </el-table-column>
+                    <el-table-column
+                            prop="batch"
+                            label="批次">
                     </el-table-column>
                     <el-table-column
                             fixed="right"
@@ -84,12 +92,16 @@
                     id: 1,
                     name: '上海理工大学',
                     major: '计算机科学与技术',
-                    number: '516'
+                    number: '516',
+                    province:'上海',
+                    batch:'统招'
                 }, {
                     id: 2,
                     name: '复旦大学',
                     major: '计算机科学与技术',
-                    number: '516'
+                    number: '516',
+                    province:'上海',
+                    batch:'特招'
                 }]
             }
         }

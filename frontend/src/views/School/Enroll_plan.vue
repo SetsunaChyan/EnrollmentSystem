@@ -49,8 +49,8 @@
 
                     <el-form-item label="录取批次" prop="batch" align="left">
                         <el-radio-group v-model="ruleForm.batch">
-                            <el-radio label="第一批"></el-radio>
-                            <el-radio label="第二批"></el-radio>
+                            <el-radio label="统招"></el-radio>
+                            <el-radio label="特招"></el-radio>
                         </el-radio-group>
                     </el-form-item>
 
