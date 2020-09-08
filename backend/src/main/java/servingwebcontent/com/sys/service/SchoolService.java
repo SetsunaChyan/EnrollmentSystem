@@ -1,11 +1,13 @@
 package servingwebcontent.com.sys.service;
 
+import org.springframework.stereotype.Service;
 import servingwebcontent.com.sys.entity.*;
 import servingwebcontent.com.sys.repository.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class SchoolService
 {
     private final SchoolRepository schoolRepository;
@@ -30,13 +32,13 @@ public class SchoolService
         return true;
     }
 
-    public void addEnrollment(School_enrollmentKey key,int num)
+    public void addEnrollment(School_enrollmentKey key,School_enrollment se)
     {
         //添加招生计划
         //参数:key招生计划，num该计划招生人数
         School_enrollment school_enrollment=new School_enrollment();
         school_enrollment.setId(key);
-        school_enrollment.setEnrollment_number(num);
+        school_enrollment.setEnrollment_number(se.getEnrollment_number());
         school_enrollmentRepository.save(school_enrollment);
     }
 
