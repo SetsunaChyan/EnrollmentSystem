@@ -11,8 +11,8 @@ import java.util.List;
 public interface Arts_gradeRepository extends JpaRepository<Arts_grade,Arts_gradeKey>
 {
     List<Arts_grade> findAll();     //查找所有
-    Arts_grade findOne(Arts_gradeKey arts_gradeKey); //查找某一个
-    Arts_grade findByIdentificationNumber(String identificationNumber); //按学生身份证号查找
-    String  save(Arts_grade arts_grade);//修改
-    String  deleteByIdIs(Arts_gradeKey arts_gradeKey);
+    //Arts_grade findOne(Arts_gradeKey arts_gradeKey); //查找某一个
+    //Arts_grade findByIdentificationNumber(String identificationNumber); //按学生身份证号查找
+    //String  save(Arts_grade arts_grade);//修改
+    //String  deleteByIdIs(Arts_gradeKey arts_gradeKey);
 }

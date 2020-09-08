@@ -53,8 +53,8 @@ public class StudentService
     public Object check_grade(String id_num){
         //查询成绩，返回值要强制类型转换，文科生转为Arts_grade，理科生转为Science_grade
         //参数:id_num用户的身份证号
-        Arts_grade arts_grade=arts_gradeRepository.findByIdentificationNumber(id_num);
-        Science_grade science_grade=science_gradeRepository.findByIdentificationNumber(id_num);
+        Arts_grade arts_grade=arts_gradeRepository.findById(new Arts_gradeKey(id_num)).get();
+        Science_grade science_grade=science_gradeRepository.findById(new Science_gradeKey(id_num)).get();
         if(arts_grade==null&&science_grade==null)   return null;
         else if(arts_grade==null)   return science_grade;
         else return arts_grade;
